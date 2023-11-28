@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An amazon bot to check prices of a desire product",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -20,5 +21,13 @@
   "homepage": "https://github.com/utm20040099/amazon-price-bot#readme",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "axios": "^1.6.1",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "bin": {
+    "amazon-bot-alexis": "./bin/global.js"
   }
 }
